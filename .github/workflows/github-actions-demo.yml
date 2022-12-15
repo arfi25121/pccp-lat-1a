@@ -9,4 +9,4 @@ jobs:
       - name: Build and tag image
         run: docker build . --file Dockerfile --tag arginfiorenza/test-action-pccp:v1
       - name: Push image to Dockerhub
-        run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_SECRET }} && docker push arginfiorenza/test-action-pccp
+        run: docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_SECRET }} && docker push arginfiorenza/test-action-pccp:v1
